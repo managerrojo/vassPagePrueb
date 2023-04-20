@@ -1,0 +1,255 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: black;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+.menu-dropdown{
+  background-color: black;
+}
+
+.menu-box{
+    display: flex;
+}
+
+.header__logo img {
+    height: 2rem;
+}
+
+.header__search{
+    margin-right: 1rem;
+}
+
+.header__search input[type="search"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.header__search button {
+    padding: 0.5rem;
+    background-color: #0088cc;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.header__menu-toggle button {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__search input[type="search"] {
+        width: 80%;
+    }
+
+    .header__search button {
+        width: 15%;
+    }
+
+    .header__menu-toggle button {
+        display: block;
+    }
+}
+
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+  }
+  
+  .header__search {
+    display: flex;
+  }
+  
+  .header__menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__menu-item {
+    margin-left: 1rem;
+  }
+  
+  .header__menu-link {
+    color: rgb(209, 33, 33);
+    text-decoration: none;
+  }
+  
+  .header__menu-link:hover {
+    text-decoration: underline;
+  }
+  
+  .header__menu-toggle {
+    display: none;
+  }
+  .header {
+    padding: 0.5rem;
+  }
+  
+  .header__logo {
+    justify-content: flex-start;
+    margin-right: 1rem;
+  }
+  
+  .header__search {
+    display: block;
+  }
+  
+  .header__nav {
+    display: none;
+  }
+  
+  .header__language {
+    display: none;
+  }
+  
+  .header__menu {
+    display: none;
+  }
+  
+  .header__menu-toggle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .grupoTota {
+    padding-top: 3em;
+  }
+  
+  @media (min-width: 320px) {
+    .header {
+      padding: 0.5rem;
+    }
+    
+    .header__logo {
+      margin-right: 1rem;
+    }
+  
+    .header__nav {
+      display: flex;
+    }
+  
+    .header__menu-toggle {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex: 1;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .header {
+      padding: 1rem;
+    }
+    
+    .header__logo {
+      margin-right: 2rem;
+    }
+  
+    .header__search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 2rem;
+    }
+  
+    .header__nav {
+      display: flex;
+    }
+  
+    .header__language {
+      display: none;
+    }
+  
+    .header__menu {
+      display: flex;
+      align-items: center;
+    }
+  
+    .header__menu-toggle {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    nav a {
+      color: rgb(255, 255, 255);
+      font-size: small;
+      justify-content: space-around;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 1em;
+    }
+  
+    nav select {
+      background-color: black;
+      color: white;
+      font-size: small;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .header__menu-toggle {
+      display: none;
+    }
+    nav a {
+      color: rgb(255, 255, 255);
+      font-size: small;
+      justify-content: space-around;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 1em;
+    }
+  
+    nav select {
+      background-color: black;
+      color: white;
+      font-size: small;
+    }
+  
+    .header__language {
+      display: none;
+    }
+  
+    .header__search {
+      display: block;
+    }
+  
+    nav a {
+      color: rgb(255, 255, 255);
+      font-size: small;
+      justify-content: space-around;
+      padding:1emp;
+     } 
+    } 

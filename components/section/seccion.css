@@ -1,0 +1,132 @@
+
+.view {
+  height: 100vh; /* establece la altura de la etiqueta div al 100% de la altura de la ventana gráfica */
+  background-image: url('/images/sectionm.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.background-image {
+  padding: 6rem;
+}
+
+.box-title{
+  width: 10rem;
+  margin-top: 8rem;
+}
+
+.box-titleII{
+  margin-top: 2rem;
+  width: 230px;
+  border-left: 2px solid #000;
+  padding-left: 2rem;
+}
+
+.parra {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 20em;
+  padding-left: 1rem;
+}
+
+.parra p:last-child::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: black;
+}
+
+.box-title{
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: flex-end;
+  background-color: aliceblue;
+  }
+  
+  
+ 
+  .parra{
+    color: black;
+  }
+  
+  .section:not(:last-child) {
+  margin-bottom: 20px;
+  }
+  
+  .section:last-child {
+  margin-bottom: 100px;
+  }
+  
+  .parra > * {
+  flex: 1;
+  }
+  
+  }
+  
+  @media (min-width: 768px) and (max-width: 1440px) {
+  .section {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  background-color: aliceblue;
+  }
+  .parra{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5rem;
+    padding-top: 5rem;
+  }
+  .box-title{
+    width: 4rem;
+    margin-top: 23px;
+  }
+  .box-titleII{
+    width: 22rem;
+    padding-left: 5rem;
+  }
+
+  }
+
+  @media screen and (min-width: 1441px) {
+  .section {
+  margin-top: 250px;
+  margin-bottom: 250px;
+  }
+  .parra {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 20em;
+  }
+  .box-title{
+    width: 10rem;
+  }
+  .box-titleII{
+    width: 30rem;
+  }
+  .view{
+    height: 170vh;
+  }
+ .header{
+   background-color: rgba(0, 0, 0, 0);
+
+ }
+  
+  }
+
+
